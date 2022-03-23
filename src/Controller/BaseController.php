@@ -27,7 +27,6 @@ class BaseController extends AbstractController
     {
         $actu = new Actualite();
         $form = $this->createForm(ActualiteType::class, $actu);
-        $form = $this->createForm(ActualiteType::class);
         return $this->render('base/actualite.html.twig', [
             'form' => $form->createView()
         ]);
